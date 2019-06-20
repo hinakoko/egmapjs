@@ -17,8 +17,10 @@ window.onload = function() {
 	map.setZoom(4)
 	map.panTo([ 35.335416, 140.183252 ]) // 東京ディズニーランド
 
-	map.addIcon( 35.335416, 140.183252, "東京ディズニーランド","icon/hanadojo.png",64) 
+	map.addIcon( 35.335416, 140.183252, "東京ディズニーランド","icon/hanadojo.png",64)
+  map.on("clik",(e) => alert(e.latling))
 }
+
 
 </script>
 <style>
